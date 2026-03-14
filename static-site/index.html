@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6B1C23">
+    <meta name="description" content="Arkaa Scapes - Premium Eco-Luxury Home Construction in Bangalore. Building Tomorrow's Legacy, Today.">
+    <meta name="keywords" content="eco luxury homes, sustainable construction, house construction bangalore, premium home builders">
+    <meta property="og:title" content="Arkaa Scapes - Eco-Luxury Home Construction">
+    <meta property="og:description" content="Premium eco-luxury home construction in Bangalore. Sustainable materials, expert craftsmanship.">
+    <title>Arkaa Scapes | Premium Eco-Luxury Home Construction in Bangalore</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <img src="https://customer-assets.emergentagent.com/job_cf026f49-75f8-48ba-accf-6fda5e741c80/artifacts/w1waun4y_WhatsApp%20Image%202026-03-14%20at%2019.28.21.jpeg" alt="Arkaa Scapes Logo" class="logo-img">
+                <span class="logo-text">Arkaa Scapes</span>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#projects" class="nav-link">Projects</a>
+            </nav>
+            
+            <div class="header-buttons">
+                <a href="#contact" class="btn btn-outline">Contact</a>
+                <a href="#contact" class="btn btn-primary">Get Quote</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon hidden"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden" id="mobileMenu">
+            <nav class="mobile-nav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#packages" class="mobile-nav-link">Packages</a>
+                <a href="#process" class="mobile-nav-link">Process</a>
+                <a href="#about" class="mobile-nav-link">About Us</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#faqs" class="mobile-nav-link">FAQs</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary btn-full">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i data-lucide="leaf"></i>
+                        <span>Eco-Luxury Construction</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Building Tomorrow's
+                        <span class="text-maroon">Legacy, Today</span>
+                    </h1>
+                    <p class="hero-description">
+                        We are a new-age construction firm in Bangalore, dedicated to crafting premium, 
+                        eco-conscious residences that blend timeless design with modern sustainability. 
+                        Your vision, built responsibly.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            Book Free Consultation
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#packages" class="btn btn-outline btn-lg">View Packages</a>
+                    </div>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <div class="trust-icon bg-maroon-light">
+                                <i data-lucide="leaf"></i>
+                            </div>
+                            <div>
+                                <p class="trust-title">100% Eco-Friendly</p>
+                                <p class="trust-subtitle">Sustainable Materials</p>
+                            </div>
+                        </div>
+                        <div class="trust-badge">
+                            <div class="trust-icon bg-orange-light">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <div>
+                                <p class="trust-title">10 Year Warranty</p>
+                                <p class="trust-subtitle">Structural Guarantee</p>
+                            </div>
+                        </div>
+                        <div class="trust-badge">
+                            <div class="trust-icon bg-maroon-light">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <p class="trust-title">On-Time Delivery</p>
+                                <p class="trust-subtitle">Committed Timelines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="Modern Eco-Luxury Home" class="hero-image">
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                    <!-- Animated SVG -->
+                    <svg class="hero-svg-top" viewBox="0 0 200 200" fill="none">
+                        <path class="draw-line" d="M20 180 L20 60 L100 20 L180 60 L180 180" stroke="#6B1C23" stroke-width="2"/>
+                        <path class="draw-line delay-1" d="M60 180 L60 100 L100 80 L140 100 L140 180" stroke="#D35400" stroke-width="2"/>
+                        <circle class="fade-in delay-2" cx="100" cy="50" r="8" fill="#D35400"/>
+                    </svg>
+                    <!-- Price Card -->
+                    <div class="hero-price-card">
+                        <p class="price-amount">₹1,779+</p>
+                        <p class="price-label">Starting per Sq.Ft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">What We Offer</span>
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-description">
+                        From concept to completion, we deliver eco-conscious construction solutions 
+                        that exceed expectations.
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card service-card-large">
+                        <div class="service-icon bg-maroon-light">
+                            <i data-lucide="home"></i>
+                        </div>
+                        <h3 class="service-title">Premium Eco-Luxury Homes</h3>
+                        <p class="service-description">
+                            We bring your personalized dream home to life with sustainable materials 
+                            and premium finishes that stand the test of time.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon bg-orange-light">
+                            <i data-lucide="pencil-ruler"></i>
+                        </div>
+                        <h3 class="service-title">Sustainable Custom Builds</h3>
+                        <p class="service-description">
+                            Tailored to your specific lifestyle needs with eco-conscious design principles.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon bg-maroon-light">
+                            <i data-lucide="leaf"></i>
+                        </div>
+                        <h3 class="service-title">Green Home Consulting</h3>
+                        <p class="service-description">
+                            Expert advice on energy efficiency, sustainable materials, and eco-friendly practices.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon bg-orange-light">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <h3 class="service-title">Rental + Residential</h3>
+                        <p class="service-description">
+                            Create beautiful spaces for tenants while maximizing your investment returns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="packages">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label text-maroon">Choose Your Package</span>
+                    <h2 class="section-title">Turnkey Packages</h2>
+                    <p class="section-description">
+                        Transparent pricing with comprehensive specifications. Every package includes 
+                        our commitment to sustainable, eco-friendly construction.
+                    </p>
+                </div>
+                
+                <div class="packages-grid">
+                    <!-- Terra Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <span class="package-label">Essential Sustainable</span>
+                            <h3 class="package-name">Terra</h3>
+                            <div class="package-price">
+                                <span class="price">₹1,779</span>
+                                <span class="price-unit">/Sq.Ft.</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li class="feature included"><i data-lucide="check"></i> 2D & 3D Floor Plans</li>
+                            <li class="feature included"><i data-lucide="check"></i> Structural Drawings (IS Codes)</li>
+                            <li class="feature included"><i data-lucide="check"></i> 10'0" Ceiling Height</li>
+                            <li class="feature included"><i data-lucide="check"></i> A1 Gold/Kamadhenu Steel</li>
+                            <li class="feature included"><i data-lucide="check"></i> Solid Concrete Blocks</li>
+                            <li class="feature included"><i data-lucide="check"></i> Rainwater Harvesting</li>
+                            <li class="feature included"><i data-lucide="check"></i> Anti-Termite Treatment</li>
+                            <li class="feature not-included"><i data-lucide="x"></i> CCTV/EV Charging Provision</li>
+                            <li class="feature not-included"><i data-lucide="x"></i> VR & AR Tour</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-full">Enquire Now</a>
+                        <button class="package-expand-btn" data-package="terra">
+                            <span>View Full Specifications</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="package-specs hidden" id="specs-terra">
+                            <div class="spec-item">
+                                <h4>Structure</h4>
+                                <p>A1 Gold/Kamadhenu Steel, M25 Grade RCC</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Kitchen</h4>
+                                <p>Granite Countertop (₹120/sqft), SS Sink (₹3000)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Flooring</h4>
+                                <p>Vitrified Tiles (₹60/sqft)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Doors</h4>
+                                <p>Teak Main Door (₹20,000)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Solara Package -->
+                    <div class="package-card package-featured">
+                        <div class="package-badge">Most Chosen</div>
+                        <div class="package-header">
+                            <span class="package-label text-orange">Balanced Premium</span>
+                            <h3 class="package-name">Solara</h3>
+                            <div class="package-price">
+                                <span class="price">₹1,999</span>
+                                <span class="price-unit">/Sq.Ft.</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li class="feature included"><i data-lucide="check"></i> 2D & 3D Floor Plans</li>
+                            <li class="feature included"><i data-lucide="check"></i> Structural Drawings (IS Codes)</li>
+                            <li class="feature included"><i data-lucide="check"></i> 10'6" Ceiling Height</li>
+                            <li class="feature included"><i data-lucide="check"></i> JSW Neo Steel/Indus</li>
+                            <li class="feature included"><i data-lucide="check"></i> Solid Concrete Blocks</li>
+                            <li class="feature included"><i data-lucide="check"></i> Rainwater Harvesting</li>
+                            <li class="feature included"><i data-lucide="check"></i> Anti-Termite Treatment</li>
+                            <li class="feature included"><i data-lucide="check"></i> CCTV/EV Charging Provision</li>
+                            <li class="feature not-included"><i data-lucide="x"></i> VR & AR Tour</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-orange btn-full">Enquire Now</a>
+                        <button class="package-expand-btn" data-package="solara">
+                            <span>View Full Specifications</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="package-specs hidden" id="specs-solara">
+                            <div class="spec-item">
+                                <h4>Structure</h4>
+                                <p>JSW Neo Steel, M25 Grade RCC, ACC Cement</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Kitchen</h4>
+                                <p>Granite Countertop (₹150/sqft), SS Sink (₹6000)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Flooring</h4>
+                                <p>Granite/Vitrified Tiles (₹100/sqft)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Doors</h4>
+                                <p>Teak Main Door (₹40,000), Pooja Door Included</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aether Package -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <span class="package-label text-maroon">Ultimate Luxury</span>
+                            <h3 class="package-name">Aether</h3>
+                            <div class="package-price">
+                                <span class="price">₹2,399</span>
+                                <span class="price-unit">/Sq.Ft.</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li class="feature included"><i data-lucide="check"></i> 2D & 3D Floor Plans</li>
+                            <li class="feature included"><i data-lucide="check"></i> Structural Drawings (IS Codes)</li>
+                            <li class="feature included"><i data-lucide="check"></i> 11'0" Ceiling Height</li>
+                            <li class="feature included"><i data-lucide="check"></i> TATA Steel</li>
+                            <li class="feature included"><i data-lucide="check"></i> Hydraulic Pressed Blocks</li>
+                            <li class="feature included"><i data-lucide="check"></i> Rainwater Harvesting</li>
+                            <li class="feature included"><i data-lucide="check"></i> Anti-Termite Treatment</li>
+                            <li class="feature included"><i data-lucide="check"></i> CCTV/EV Charging Provision</li>
+                            <li class="feature included"><i data-lucide="check"></i> VR & AR Tour</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-full">Enquire Now</a>
+                        <button class="package-expand-btn" data-package="aether">
+                            <span>View Full Specifications</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="package-specs hidden" id="specs-aether">
+                            <div class="spec-item">
+                                <h4>Structure</h4>
+                                <p>TATA Steel, M25 Grade RCC, Ultratech Cement</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Kitchen</h4>
+                                <p>Quartz Countertop (₹500/sqft), Premium Sink (₹9000)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Flooring</h4>
+                                <p>Premium Vitrified/Granite (₹140/sqft)</p>
+                            </div>
+                            <div class="spec-item">
+                                <h4>Doors</h4>
+                                <p>Teak Main Door (₹55,000), Premium Pooja Door</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="packages-note">* All prices are inclusive of GST. Custom packages available on request.</p>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process">
+            <div class="container">
+                <div class="process-layout">
+                    <div class="process-intro">
+                        <span class="section-label text-orange">How We Work</span>
+                        <h2 class="section-title">Our Process</h2>
+                        <p class="section-description">
+                            From your first consultation to the moment you step into your new home, 
+                            we ensure a seamless, transparent, and stress-free journey.
+                        </p>
+                        <div class="process-image-container">
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80" alt="Architectural blueprints" class="process-image">
+                            <div class="process-image-overlay">
+                                <p>Your Dream, Our Blueprint</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-icon bg-maroon">
+                                <i data-lucide="message-square"></i>
+                            </div>
+                            <div class="step-line"></div>
+                            <div class="step-content">
+                                <span class="step-number">Step 01</span>
+                                <h3 class="step-title">Consult & Conceptualize</h3>
+                                <p class="step-description">Free consultation to align on your vision, budget, and sustainability goals.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon bg-orange">
+                                <i data-lucide="pencil-ruler"></i>
+                            </div>
+                            <div class="step-line"></div>
+                            <div class="step-content">
+                                <span class="step-number text-orange">Step 02</span>
+                                <h3 class="step-title">Sustainable Design</h3>
+                                <p class="step-description">Our architects create eco-conscious floor plans and 3D elevations.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon bg-maroon">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <div class="step-line"></div>
+                            <div class="step-content">
+                                <span class="step-number">Step 03</span>
+                                <h3 class="step-title">Material Curation</h3>
+                                <p class="step-description">We help you select premium, green materials for your home.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon bg-orange">
+                                <i data-lucide="eye"></i>
+                            </div>
+                            <div class="step-line"></div>
+                            <div class="step-content">
+                                <span class="step-number text-orange">Step 04</span>
+                                <h3 class="step-title">Transparent Construction</h3>
+                                <p class="step-description">Real-time updates on your project's progress with complete transparency.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon bg-maroon">
+                                <i data-lucide="clipboard-check"></i>
+                            </div>
+                            <div class="step-line"></div>
+                            <div class="step-content">
+                                <span class="step-number">Step 05</span>
+                                <h3 class="step-title">Quality & Eco-Audit</h3>
+                                <p class="step-description">Rigorous checks for sustainability standards and craftsmanship excellence.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon bg-orange">
+                                <i data-lucide="home"></i>
+                            </div>
+                            <div class="step-content">
+                                <span class="step-number text-orange">Step 06</span>
+                                <h3 class="step-title">Handover & Harmony</h3>
+                                <p class="step-description">Move into your beautiful new home backed by our 10-year warranty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Modern sustainable home interior" class="about-image">
+                        <div class="about-stats-card">
+                            <p class="stats-number">4+</p>
+                            <p class="stats-label">Years of Expertise</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-content">
+                        <span class="section-label text-maroon">About Us</span>
+                        <h2 class="section-title">Born from a Passion for Green Building</h2>
+                        <div class="about-text">
+                            <p>We're a young, ambitious firm driven by a bold vision — to redefine what eco-luxury means in residential construction. Fresh perspectives meet proven expertise.</p>
+                            <p>We launched <strong class="text-maroon">Arkaa Scapes</strong> with a singular mission: to prove that ultra-luxury homes and environmental responsibility are not mutually exclusive, but perfectly compatible.</p>
+                            <p>Our team combines youthful energy with deep technical knowledge, bringing innovative approaches to every project.</p>
+                            <p class="text-orange"><strong>We are currently constructing our flagship project — a showcase of everything we stand for.</strong></p>
+                        </div>
+                        
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon"><i data-lucide="leaf"></i></div>
+                                <div>
+                                    <h4>Sustainability First</h4>
+                                    <p>Every decision prioritizes environmental responsibility.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i data-lucide="award"></i></div>
+                                <div>
+                                    <h4>Uncompromising Quality</h4>
+                                    <p>Premium materials and expert craftsmanship.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i data-lucide="users"></i></div>
+                                <div>
+                                    <h4>Client Partnership</h4>
+                                    <p>Your vision guides our execution.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i data-lucide="target"></i></div>
+                                <div>
+                                    <h4>Transparent Process</h4>
+                                    <p>No hidden costs, honest communication.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label text-orange">Client Stories</span>
+                    <h2 class="section-title">The Journey Begins</h2>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Our Flagship Project is Underway</h3>
+                    <p class="testimonial-text">
+                        Our first eco-luxury residence is currently under construction, and we're documenting 
+                        every step of the journey. Be among the first to witness our commitment to quality 
+                        and sustainable innovation.
+                    </p>
+                    <div class="testimonial-quote">
+                        <p>"Working with Arkaa Scapes has been an incredible experience. Their attention to 
+                        sustainable materials and design details gives us confidence that our home will be 
+                        both beautiful and environmentally responsible."</p>
+                        <span class="quote-author">— First Client, Flagship Project</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        Start Your Journey
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label text-maroon">Our Work</span>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+                
+                <div class="projects-layout">
+                    <div class="project-preview">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Flagship Project Preview" class="project-image">
+                        <div class="project-badge">In Progress</div>
+                        <div class="project-overlay">
+                            <h3>Flagship Eco-Luxury Residence</h3>
+                            <p>Bangalore • 3,500 Sq.Ft. • Aether Package</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-info-icon">
+                            <i data-lucide="construction"></i>
+                        </div>
+                        <h3>Coming Soon</h3>
+                        <p>Our portfolio is growing! We're currently working on our flagship project - 
+                        a stunning eco-luxury residence that showcases everything Arkaa Scapes stands for.</p>
+                        <ul class="project-features">
+                            <li><span class="bullet"></span> 100% sustainable materials and construction practices</li>
+                            <li><span class="bullet"></span> Solar panel integration and rainwater harvesting</li>
+                            <li><span class="bullet"></span> Premium finishes with low-VOC paints and materials</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">
+                            Be Our Next Project
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs" class="faqs">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label text-orange">Got Questions?</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">Find answers to common questions about our eco-luxury construction services.</p>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What factors affect house construction costs in Bangalore?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>House construction costs depend on factors like plot size, design complexity, materials used, labor charges, and permits. Arkaa Scapes provides transparent pricing and a detailed cost breakdown to help you plan your budget effectively.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What makes Arkaa Scapes different from other construction companies?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We specialize exclusively in eco-luxury construction, combining premium finishes with sustainable practices. We offer transparent pricing, real-time project tracking, and a 10-year structural warranty on all our projects.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I customize my home design with eco-friendly features?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We offer fully customizable designs that incorporate sustainable features like solar panel integration, rainwater harvesting, enhanced thermal insulation, and low-VOC materials.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What sustainable materials do you use in construction?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We use eco-friendly materials including fly ash bricks, AAC blocks, low-embodied carbon structural materials, sustainable wood alternatives, low-VOC paints, and recycled content in finishes.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long does it take to build an eco-luxury home?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Construction timelines typically range from 10-14 months depending on the size and complexity of your project. We commit to on-time delivery without compromising on quality or sustainability standards.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What warranty do you provide on construction?</span>
+                            <i data-lucide="chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All Arkaa Scapes homes come with a 10-year structural warranty. We also ensure all materials and fittings carry their respective manufacturer warranties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label text-maroon">Get In Touch</span>
+                    <h2 class="section-title">Start Your Journey</h2>
+                    <p class="section-description">Book a free consultation and take the first step towards your sustainable dream home.</p>
+                </div>
+                
+                <div class="contact-layout">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget</option>
+                                    <option value="40-60 Lakhs">₹40-60 Lakhs</option>
+                                    <option value="60-80 Lakhs">₹60-80 Lakhs</option>
+                                    <option value="80 Lakhs - 1 Crore">₹80 Lakhs - 1 Crore</option>
+                                    <option value="1 Crore+">₹1 Crore and above</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Interested Package</label>
+                            <select id="package" name="package">
+                                <option value="">Select package</option>
+                                <option value="Terra - ₹1,779/sq.ft.">Terra - ₹1,779/sq.ft.</option>
+                                <option value="Solara - ₹1,999/sq.ft.">Solara - ₹1,999/sq.ft.</option>
+                                <option value="Aether - ₹2,399/sq.ft.">Aether - ₹2,399/sq.ft.</option>
+                                <option value="Custom Package">Custom Package</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your dream home..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">
+                            <span>Book Free Consultation</span>
+                            <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>Prefer to Chat?</h3>
+                            <p>Connect with us instantly on WhatsApp for quick queries and consultation scheduling.</p>
+                            <a href="https://wa.me/919999999999?text=Hi!%20I'm%20interested%20in%20Arkaa%20Scapes%20eco-luxury%20construction." target="_blank" class="btn btn-whatsapp btn-full">
+                                <i data-lucide="message-circle"></i>
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>Contact Details</h3>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon bg-maroon-light"><i data-lucide="phone"></i></div>
+                                    <div>
+                                        <p class="contact-label">Phone</p>
+                                        <p class="contact-value">+91 XXXXX XXXXX</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon bg-orange-light"><i data-lucide="mail"></i></div>
+                                    <div>
+                                        <p class="contact-label">Email</p>
+                                        <p class="contact-value">info@arkaascapes.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon bg-maroon-light"><i data-lucide="map-pin"></i></div>
+                                    <div>
+                                        <p class="contact-label">Location</p>
+                                        <p class="contact-value">Bangalore, Karnataka, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://customer-assets.emergentagent.com/job_cf026f49-75f8-48ba-accf-6fda5e741c80/artifacts/w1waun4y_WhatsApp%20Image%202026-03-14%20at%2019.28.21.jpeg" alt="Arkaa Scapes Logo" class="footer-logo-img">
+                        <span>Arkaa Scapes</span>
+                    </div>
+                    <p class="footer-description">
+                        Building Tomorrow's Legacy, Today. Premium eco-luxury home construction 
+                        in Bangalore with a commitment to sustainability and craftsmanship.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Packages</h4>
+                    <ul>
+                        <li><a href="#packages">Terra Package</a></li>
+                        <li><a href="#packages">Solara Package</a></li>
+                        <li><a href="#packages">Aether Package</a></li>
+                        <li><a href="#contact">Custom Builds</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arkaa Scapes. All rights reserved.</p>
+                <button class="back-to-top" id="backToTop">
+                    Back to top
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast hidden" id="toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div>
+                <p class="toast-title">Success!</p>
+                <p class="toast-message">Your enquiry has been submitted.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
