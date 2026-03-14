@@ -1,34 +1,205 @@
-.App-logo {
-    height: 40vmin;
+/* Arkaa Scapes - Custom Styles */
+
+.font-heading {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Animated line drawing */
+.draw-line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-line 3s ease-out forwards;
+}
+
+@keyframes draw-line {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Hero background overlay */
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(250, 245, 240, 0.95) 0%, rgba(250, 245, 240, 0.7) 100%);
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(107, 28, 35, 0.1);
+}
+
+/* Timeline connector */
+.timeline-connector {
+    background: linear-gradient(to bottom, #E8DED5, #6B1C23);
+}
+
+/* Package card borders */
+.package-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.package-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #E8DED5;
+    transition: background 0.3s ease;
+}
+
+.package-card:hover::before {
+    background: #6B1C23;
+}
+
+.package-premium::before {
+    background: #D35400;
+}
+
+/* Grain texture overlay */
+.grain-texture {
+    position: relative;
+}
+
+.grain-texture::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
     pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
+/* WhatsApp button pulse */
+.whatsapp-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Smooth section transitions */
+.section-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
 }
 
-.App-link {
-    color: #61dafb;
+.section-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+/* Navigation styles */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #6B1C23;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile menu animation */
+.mobile-menu-enter {
+    transform: translateX(100%);
+}
+
+.mobile-menu-enter-active {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Process step animation */
+.process-step {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.process-step.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* FAQ accordion styling */
+.faq-item {
+    border-bottom: 1px solid #E8DED5;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+/* Image loading placeholder */
+.image-skeleton {
+    background: linear-gradient(90deg, #E8DED5 25%, #FAF5F0 50%, #E8DED5 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
     }
-    to {
-        transform: rotate(360deg);
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Container utilities */
+.container-custom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .container-custom {
+        padding: 0 3rem;
+    }
+}
+
+/* Section spacing */
+.section-spacing {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .section-spacing {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 }
