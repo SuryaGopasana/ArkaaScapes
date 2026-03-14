@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Leaf, Shield, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMAGE = "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80";
+const HERO_IMAGE = "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80";
 
 const Hero = () => {
   const scrollToContact = () => {

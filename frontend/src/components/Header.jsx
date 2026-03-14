@@ -51,7 +51,7 @@ const Header = ({ isScrolled }) => {
             <img 
               src={LOGO_URL} 
               alt="Arkaa Scapes Logo" 
-              className="h-12 w-12 object-contain rounded-md"
+              className="h-16 w-16 object-contain rounded-md"
             />
             <span className="font-heading text-xl font-semibold text-maroon hidden sm:block">
               Arkaa Scapes
@@ -76,11 +76,19 @@ const Header = ({ isScrolled }) => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
+          {/* CTA Buttons */}
+          <div className="hidden lg:flex items-center gap-3">
+            <Button
+              variant="outline"
+              onClick={() => scrollToSection('#contact')}
+              className="border-maroon text-maroon hover:bg-maroon/10 font-body font-medium px-5"
+              data-testid="contact-btn"
+            >
+              Contact
+            </Button>
             <Button
               onClick={() => scrollToSection('#contact')}
-              className="bg-maroon hover:bg-maroon-dark text-cream font-body font-medium px-6"
+              className="bg-maroon hover:bg-maroon-dark text-cream font-body font-medium px-5"
               data-testid="get-quote-btn"
             >
               Get Quote

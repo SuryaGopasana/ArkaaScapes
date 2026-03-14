@@ -60,8 +60,8 @@ const About = () => {
               transition={{ delay: 0.5 }}
               className="absolute -bottom-6 -right-6 bg-maroon rounded-xl p-6 shadow-xl max-w-[200px]"
             >
-              <p className="font-heading text-3xl font-bold text-cream">10+</p>
-              <p className="font-body text-sm text-cream/80">Years of Combined Experience</p>
+              <p className="font-heading text-3xl font-bold text-cream">4+</p>
+              <p className="font-body text-sm text-cream/80">Years of Expertise</p>
             </motion.div>
           </motion.div>
 
@@ -80,8 +80,8 @@ const About = () => {
             </h2>
             <div className="space-y-4 font-body text-charcoal/70 leading-relaxed mb-8">
               <p>
-                While we are a new firm, our founding team brings together decades of experience 
-                from the forefront of sustainable architecture and premium construction.
+                We're a young, ambitious firm driven by a bold vision — to redefine what 
+                eco-luxury means in residential construction. Fresh perspectives meet proven expertise.
               </p>
               <p>
                 We launched <span className="text-maroon font-semibold">Arkaa Scapes</span> with 
@@ -89,12 +89,13 @@ const About = () => {
                 are not mutually exclusive, but perfectly compatible.
               </p>
               <p>
-                We are not just building structures; we are cultivating ecosystems and creating 
-                healthier, more harmonious living spaces for you and the planet.
+                Our team combines youthful energy with deep technical knowledge, bringing innovative 
+                approaches to every project. We're not just building structures; we're crafting 
+                sustainable legacies for families who share our values.
               </p>
               <p className="text-orange font-medium">
-                We are currently in the final stages of constructing our flagship project, 
-                a testament to our commitment to quality and sustainable innovation.
+                We are currently constructing our flagship project — a showcase of everything 
+                we stand for. Join us at the beginning of something extraordinary.
               </p>
             </div>
 
