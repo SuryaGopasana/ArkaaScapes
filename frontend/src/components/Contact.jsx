@@ -12,10 +12,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from 'sonner';
-import axios from 'axios';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const WHATSAPP_NUMBER = '919999999999'; // Placeholder
+// INSTRUCTIONS: Replace this URL with your Google Apps Script Web App URL
+// Follow the setup guide in /app/GOOGLE_SHEETS_SETUP.md
+const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+
+const WHATSAPP_NUMBER = '919999999999'; // Replace with your actual WhatsApp number
 
 const Contact = () => {
   const ref = useRef(null);
@@ -44,33 +46,45 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post(`${BACKEND_URL}/api/enquiries`, formData);
-      
-      if (response.data.success) {
-        toast.success('Enquiry submitted successfully!', {
-          description: 'We will contact you shortly.',
-        });
-        
-        // Open WhatsApp in new tab
-        if (response.data.whatsapp_link) {
-          window.open(response.data.whatsapp_link, '_blank');
-        }
-        
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          budget: '',
-          package_interest: '',
-          message: '',
-        });
-      }
-    } catch (error) {
-      toast.error('Failed to submit enquiry', {
-        description: 'Please try again or contact us directly.',
+      // Submit to Google Sheets
+      const response = await fetch(GOOGLE_SHEET_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Required for Google Apps Script
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
       });
-      console.error('Enquiry submission error:', error);
+
+      // Since mode is 'no-cors', we can't read the response
+      // We assume success if no error is thrown
+      toast.success('Enquiry submitted successfully!', {
+        description: 'We will contact you shortly.',
+      });
+
+      // Generate WhatsApp message
+      const whatsappMessage = `Hi! I'm interested in Arkaa Scapes.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0ABudget: ${formData.budget || 'Not specified'}%0APackage: ${formData.package_interest || 'Not specified'}%0A%0AMessage: ${formData.message || 'No message'}`;
+      
+      // Open WhatsApp
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}`, '_blank');
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        budget: '',
+        package_interest: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Submission failed', {
+        description: 'Please try WhatsApp or call us directly.',
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -175,10 +189,10 @@ const Contact = () => {
                       <SelectValue placeholder="Select budget" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="40-60">₹40-60 Lakhs</SelectItem>
-                      <SelectItem value="60-80">₹60-80 Lakhs</SelectItem>
-                      <SelectItem value="80-100">₹80 Lakhs - 1 Crore</SelectItem>
-                      <SelectItem value="100+">₹1 Crore and above</SelectItem>
+                      <SelectItem value="40-60 Lakhs">₹40-60 Lakhs</SelectItem>
+                      <SelectItem value="60-80 Lakhs">₹60-80 Lakhs</SelectItem>
+                      <SelectItem value="80 Lakhs - 1 Crore">₹80 Lakhs - 1 Crore</SelectItem>
+                      <SelectItem value="1 Crore+">₹1 Crore and above</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -196,10 +210,10 @@ const Contact = () => {
                     <SelectValue placeholder="Select package" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="terra">Terra - ₹1,779/sq.ft.</SelectItem>
-                    <SelectItem value="solara">Solara - ₹1,999/sq.ft.</SelectItem>
-                    <SelectItem value="aether">Aether - ₹2,399/sq.ft.</SelectItem>
-                    <SelectItem value="custom">Custom Package</SelectItem>
+                    <SelectItem value="Terra - ₹1,779/sq.ft.">Terra - ₹1,779/sq.ft.</SelectItem>
+                    <SelectItem value="Solara - ₹1,999/sq.ft.">Solara - ₹1,999/sq.ft.</SelectItem>
+                    <SelectItem value="Aether - ₹2,399/sq.ft.">Aether - ₹2,399/sq.ft.</SelectItem>
+                    <SelectItem value="Custom Package">Custom Package</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -270,7 +284,7 @@ const Contact = () => {
                   <div>
                     <p className="font-body text-sm font-semibold text-charcoal">Phone</p>
                     <p className="font-body text-charcoal/70">+91 XXXXX XXXXX</p>
-                    <p className="font-body text-xs text-charcoal/50">(Placeholder - to be updated)</p>
+                    <p className="font-body text-xs text-charcoal/50">(Update with your number)</p>
                   </div>
                 </div>
 
@@ -281,7 +295,7 @@ const Contact = () => {
                   <div>
                     <p className="font-body text-sm font-semibold text-charcoal">Email</p>
                     <p className="font-body text-charcoal/70">info@arkaascapes.com</p>
-                    <p className="font-body text-xs text-charcoal/50">(Placeholder - to be updated)</p>
+                    <p className="font-body text-xs text-charcoal/50">(Update with your email)</p>
                   </div>
                 </div>
 
