@@ -1,0 +1,74 @@
+{
+  "total_tests": 11,
+  "passed_tests": 11,
+  "failed_tests": 0,
+  "success_rate": 100.0,
+  "test_details": [
+    {
+      "test_name": "Health Check",
+      "success": true,
+      "details": "Status: 200, Response: {\n  \"status\": \"healthy\",\n  \"service\": \"Arkaa Scapes API\"\n}",
+      "timestamp": "2026-03-14T14:40:41.998968"
+    },
+    {
+      "test_name": "Root API Endpoint",
+      "success": true,
+      "details": "Status: 200, Response: {\n  \"message\": \"Arkaa Scapes API - Building Tomorrow's Legacy, Today\"\n}",
+      "timestamp": "2026-03-14T14:40:42.117179"
+    },
+    {
+      "test_name": "Create Valid Enquiry",
+      "success": true,
+      "details": "Status: 200, Response: {\n  \"success\": true,\n  \"message\": \"Thank you for your interest! We'll contact you shortly.\",\n  \"enquiry_id\": \"d10b9960-edf1-489c-aa79-cb5ca77f09e4\",\n  \"whatsapp_link\": \"https://wa.me/919999999999?text=%F0%9F%8F%A0%20New%20Enquiry%20from%20Arkaa%20Scapes%20Website%0A%0A%2AName%3A%2A%20John%20Doe%0A%2AEmail%3A%2A%20john.doe%40example.com%0A%2APhone%3A%2A%209876543210%0A%2ABudget%3A%2A%2060-80%0A%2APackage%20Interest%3A%2A%20solara%0A%0A%2AMessage%3A%2A%0AInterested%20in%20eco-luxury%20home%20construction%0A%0A---%0AEnquiry%20ID%3A%20d10b9960-edf1-489c-aa79-cb5ca77f09e4\"\n}",
+      "timestamp": "2026-03-14T14:40:42.267024"
+    },
+    {
+      "test_name": "Enquiry Response Structure",
+      "success": true,
+      "details": "All required fields present",
+      "timestamp": "2026-03-14T14:40:42.267608"
+    },
+    {
+      "test_name": "WhatsApp Link Format",
+      "success": true,
+      "details": "Valid WhatsApp link: https://wa.me/919999999999?text=%F0%9F%8F%A0%20New...",
+      "timestamp": "2026-03-14T14:40:42.267627"
+    },
+    {
+      "test_name": "Create Minimal Enquiry",
+      "success": true,
+      "details": "Status: 200, Response: {\n  \"success\": true,\n  \"message\": \"Thank you for your interest! We'll contact you shortly.\",\n  \"enquiry_id\": \"e7fb2c44-c483-4da3-8944-c28cc1db28d6\",\n  \"whatsapp_link\": \"https://wa.me/919999999999?text=%F0%9F%8F%A0%20New%20Enquiry%20from%20Arkaa%20Scapes%20Website%0A%0A%2AName%3A%2A%20Jane%20Smith%0A%2AEmail%3A%2A%20jane.smith%40example.com%0A%2APhone%3A%2A%209876543211%0A%2ABudget%3A%2A%20Not%20specified%0A%2APackage%20Interest%3A%2A%20Not%20specified%0A%0A%2AMessage%3A%2A%0ANo%20additional%20message%0A%0A---%0AEnquiry%20ID%3A%20e7fb2c44-c483-4da3-8944-c28cc1db28d6\"\n}",
+      "timestamp": "2026-03-14T14:40:42.412233"
+    },
+    {
+      "test_name": "Create Enquiry - Invalid Email",
+      "success": true,
+      "details": "Status: 422, Response: {\n  \"detail\": [\n    {\n      \"type\": \"value_error\",\n      \"loc\": [\n        \"body\",\n        \"email\"\n      ],\n      \"msg\": \"value is not a valid email address: An email address must have an @-sign.\",\n      \"input\": \"invalid-email\",\n      \"ctx\": {\n        \"reason\": \"An email address must have an @-sign.\"\n      }\n    }\n  ]\n}",
+      "timestamp": "2026-03-14T14:40:42.547478"
+    },
+    {
+      "test_name": "Create Enquiry - Missing Fields",
+      "success": true,
+      "details": "Status: 422, Response: {\n  \"detail\": [\n    {\n      \"type\": \"missing\",\n      \"loc\": [\n        \"body\",\n        \"email\"\n      ],\n      \"msg\": \"Field required\",\n      \"input\": {\n        \"name\": \"Incomplete User\"\n      },\n      \"url\": \"https://errors.pydantic.dev/2.12/v/missing\"\n    },\n    {\n      \"type\": \"missing\",\n      \"loc\": [\n        \"body\",\n        \"phone\"\n      ],\n      \"msg\": \"Field required\",\n      \"input\": {\n        \"name\": \"Incomplete User\"\n      },\n      \"url\": \"https://errors.pydantic.dev/2.12/v/missing\"\n    }\n  ]\n}",
+      "timestamp": "2026-03-14T14:40:42.716065"
+    },
+    {
+      "test_name": "Get All Enquiries",
+      "success": true,
+      "details": "Status: 200, Response: [\n  {\n    \"id\": \"d10b9960-edf1-489c-aa79-cb5ca77f09e4\",\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phone\": \"9876543210\",\n    \"budget\": \"60-80\",\n    \"message\": \"Interested in eco-luxury home construction\",\n    \"package_interest\": \"solara\",\n    \"created_at\": \"2026-03-14T14:40:42.223444Z\",\n    \"status\": \"new\"\n  },\n  {\n    \"id\": \"e7fb2c44-c483-4da3-8944-c28cc1db28d6\",\n    \"name\": \"Jane Smith\",\n    \"email\": \"jane.smith@example.com\",\n    \"phone\": \"9876543211\",\n    \"budget\": null,\n    \"message\": null,\n    \"package_interest\": null,\n    \"created_at\": \"2026-03-14T14:40:42.393492Z\",\n    \"status\": \"new\"\n  }\n]",
+      "timestamp": "2026-03-14T14:40:42.819084"
+    },
+    {
+      "test_name": "Create Status Check",
+      "success": true,
+      "details": "Status: 200, Response: {\n  \"id\": \"0981220a-fa85-4c58-b492-a61d54c53516\",\n  \"client_name\": \"Test Client\",\n  \"timestamp\": \"2026-03-14T14:40:42.906654Z\"\n}",
+      "timestamp": "2026-03-14T14:40:42.948681"
+    },
+    {
+      "test_name": "Get Status Checks",
+      "success": true,
+      "details": "Status: 200, Response: [\n  {\n    \"id\": \"0981220a-fa85-4c58-b492-a61d54c53516\",\n    \"client_name\": \"Test Client\",\n    \"timestamp\": \"2026-03-14T14:40:42.906654Z\"\n  }\n]",
+      "timestamp": "2026-03-14T14:40:43.062443"
+    }
+  ]
+}
