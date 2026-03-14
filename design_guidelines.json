@@ -1,0 +1,98 @@
+{
+  "project_name": "Arkaa Scapes",
+  "app_type": "marketing_site",
+  "design_philosophy": {
+    "identity": "Modern Premium Eco-Luxury",
+    "core_values": ["Trust", "Sustainability", "Craftsmanship", "Warmth"],
+    "vibe": "Organic, Grounded, Sophisticated, Architectural",
+    "visual_style": "Fusion of Architectural Precision (Grid/Lines) and Organic Warmth (Earth Tones/Textures)"
+  },
+  "theme": {
+    "mode": "light",
+    "background_strategy": "Cream/Off-White (#FAF5F0) base. Avoid stark white. Use subtle grain/noise textures if possible."
+  },
+  "colors": {
+    "primary": "#6B1C23",
+    "primary_name": "Deep Maroon (The Anchor)",
+    "secondary": "#D35400",
+    "secondary_name": "Burnt Orange (The Energy)",
+    "background": "#FAF5F0",
+    "background_name": "Cream (The Canvas)",
+    "foreground": "#1A1A1A",
+    "foreground_name": "Warm Charcoal (Text)",
+    "accent": "#E8DED5",
+    "accent_name": "Stone Grey (Borders/Separators)",
+    "palette_instructions": "Update /app/frontend/src/index.css :root variables to match these hex codes exactly. Ensure --primary is #6B1C23 and --background is #FAF5F0."
+  },
+  "typography": {
+    "font_family_headings": "Playfair Display, serif",
+    "font_family_body": "Manrope, sans-serif",
+    "instructions": "Import 'Playfair Display' (weights 400, 600, 700) and 'Manrope' (weights 400, 500, 600) from Google Fonts. Use Playfair for all H1-H3 headings. Use Manrope for body text and UI elements."
+  },
+  "layout_grid": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "spacing_scale": "Generous. Use py-20 or py-24 for section spacing. Gap-8 or Gap-12 for grids.",
+    "bento_grid_mode": "Mode A (Asymmetrical) for Services section. Don't use equal columns."
+  },
+  "components": {
+    "Hero": {
+      "type": "Split Screen or Overlay",
+      "visual_hook": "Animated Architectural Lines",
+      "instructions": "Left: High-impact copy + CTA. Right: A composition of the Hero Image overlaid with an SVG architectural outline that draws itself using framer-motion (animate pathLength 0->1).",
+      "image_url": "https://images.unsplash.com/photo-1766603636562-531bb3e1dda8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlY28lMjBsdXh1cnklMjBob21lJTIwZXh0ZXJpb3IlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzczNDk4NzAyfDA&ixlib=rb-4.1.0&q=85"
+    },
+    "Services": {
+      "layout": "Bento Grid",
+      "cards": [
+        {"title": "Eco-Luxury Homes", "icon": "HouseLine", "desc": "Sustainable materials meets premium finish."},
+        {"title": "Custom Builds", "icon": "PencilRuler", "desc": "Tailored to your specific lifestyle needs."},
+        {"title": "Green Consulting", "icon": "Leaf", "desc": "Expert advice on energy efficiency."}
+      ],
+      "style": "Cards with 'Stone Grey' borders, cream background, and hover lift effect."
+    },
+    "Packages": {
+      "layout": "3-Column Pricing/Feature Table",
+      "items": [
+        {"name": "Terra", "color": "Stone/Earth", "vibe": "Essential Sustainable"},
+        {"name": "Solara", "color": "Burnt Orange", "vibe": "Balanced Premium"},
+        {"name": "Aether", "color": "Deep Maroon", "vibe": "Ultimate Luxury"}
+      ],
+      "special_effect": "Use the 'Tracing Beam' border effect for the 'Aether' (Premium) card to highlight it."
+    },
+    "Process": {
+      "layout": "Vertical Timeline",
+      "visual": "Connecting line that fills color as user scrolls down (use framer-motion useScroll).",
+      "image_url": "https://images.unsplash.com/photo-1577561776790-1a20c419b1a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3QlMjBza2V0Y2hpbmclMjBibHVlcHJpbnRzJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzM0OTg3MTF8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "Contact": {
+      "integration": "WhatsApp",
+      "style": "Simple form + Large 'Chat on WhatsApp' button.",
+      "whatsapp_number": "919999999999"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1766603636562-531bb3e1dda8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBlY28lMjBsdXh1cnklMjBob21lJTIwZXh0ZXJpb3IlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzczNDk4NzAyfDA&ixlib=rb-4.1.0&q=85",
+      "interior_accent": "https://images.unsplash.com/photo-1755087651309-fa3805701674?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGludGVyaW9yJTIwZGVzaWduJTIwbGl2aW5nJTIwcm9vbSUyMHBsYW50cyUyMHN1bmxpZ2h0fGVufDB8fHx8MTc3MzQ5ODcwNnww&ixlib=rb-4.1.0&q=85",
+      "process_sketch": "https://images.unsplash.com/photo-1577561776790-1a20c419b1a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxhcmNoaXRlY3QlMjBza2V0Y2hpbmclMjBibHVlcHJpbnRzJTIwY2xvc2UlMjB1cHxlbnwwfHx8fDE3NzM0OTg3MTF8MA&ixlib=rb-4.1.0&q=85",
+      "project_preview": "https://images.unsplash.com/photo-1758957762198-c0cda25b023f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBlY28lMjBsdXh1cnklMjBob21lJTIwZXh0ZXJpb3IlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzczNDk4NzAyfDA&ixlib=rb-4.1.0&q=85",
+      "logo_url": "https://customer-assets.emergentagent.com/job_cf026f49-75f8-48ba-accf-6fda5e741c80/artifacts/w1waun4y_WhatsApp%20Image%202026-03-14%20at%2019.28.21.jpeg"
+    },
+    "icons_library": "lucide-react"
+  },
+  "motion_guidelines": {
+    "library": "framer-motion",
+    "hero_animation": "SVG Path Drawing: <motion.path initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 2, ease: 'easeInOut' }} />",
+    "scroll_reveal": "Use whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 50 }} viewport={{ once: true }} for sections."
+  },
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds. Use solid Cream (#FAF5F0).",
+    "Use 'Playfair Display' for all Headings (H1-H6).",
+    "Use 'Manrope' for all Body text.",
+    "Buttons should be sharp or slightly rounded (rounded-md), not pill-shaped, to match architectural precision.",
+    "Use the 'Deep Maroon' (#6B1C23) for primary buttons and active states.",
+    "Ensure all images have alt text.",
+    "Add data-testid to all interactive elements."
+  ],
+  "instructions_to_main_agent": "1. Install 'framer-motion' and 'lucide-react'. 2. Update tailwind.config.js to include the new colors and fonts. 3. Create the 'HeroArchitecture' component first as it is the visual hook. 4. Build the 'Services' section using the Bento Grid layout. 5. Implement the 'Packages' section with the 'Tracing Beam' effect on the premium card."
+}
