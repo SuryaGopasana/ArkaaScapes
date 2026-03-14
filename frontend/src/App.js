@@ -17,3 +17,7 @@ function App() {
 }
 
 export default App;
+
+// NOTE: This is now a static website - no backend required!
+// Form submissions go directly to Google Sheets
+// See /app/GOOGLE_SHEETS_SETUP.md for setup instructions
