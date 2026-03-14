@@ -54,7 +54,7 @@ const Footer = () => {
               <img 
                 src={LOGO_URL} 
                 alt="Arkaa Scapes Logo" 
-                className="h-12 w-12 object-contain rounded-md bg-cream"
+                className="h-16 w-16 object-contain rounded-md bg-cream"
               />
               <span className="font-heading text-xl font-semibold text-cream">
                 Arkaa Scapes
